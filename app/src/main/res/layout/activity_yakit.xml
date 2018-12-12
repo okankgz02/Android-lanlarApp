@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7BC05"
+    android:orientation="vertical"
+
+    tools:context="com.example.mk.otogalerim.Yakit">
+
+    <ProgressBar
+        android:id="@+id/login_progressYakit"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/yakit_view"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Yakıt Tüketimi Bilgilerini Giriniz"
+        android:textColor="#203040"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/yakitTipiBilgiEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yakıt Tipini Giriniz"
+        android:textColorHint="#203040" />
+
+    <EditText
+        android:id="@+id/ortalamaYakitEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ortalama Yakıt Bilgi Giriniz"
+        android:textColorHint="#203040" />
+
+    <EditText
+        android:id="@+id/depoHacmiSüratEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Depo Hacmi Giriniz"
+        android:textColorHint="#203040" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/yakitTuketimBilgisiButon"
+        android:background="@drawable/mune_buton_back"
+        android:text="İlan Ver"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/yakitTuketimBilgisiButonGeri"
+        android:background="@drawable/mune_buton_back"
+        android:text="Geri"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
